@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="green">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0" />
+    <title>NexColetas — Logística de Coletas Urbanas</title>
+    <meta name="description" content="Plataforma SaaS multi-tenant de logística inteligente, coletas urbanas, entregas rápidas e operações regionais com base em Manhuaçu - MG." />
+    <meta property="og:title" content="NexColetas — Logística de Coletas Urbanas" />
+    <meta property="og:description" content="Plataforma SaaS multi-tenant de logística inteligente, coletas urbanas, entregas rápidas e operações regionais com base em Manhuaçu - MG." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="theme-color" content="#174D35" />
+    <meta name="mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+    <meta name="apple-mobile-web-app-title" content="NexColetas" />
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" type="image/svg+xml" href="/icon.svg" />
+    <!-- Google Fonts: Montserrat & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:ital,wght@0,600;0,700;0,800;1,700;1,800&display=swap" rel="stylesheet" />
+    <!-- Script anti-flash de tema (restaura preferência imediatamente antes do render) -->
+    <script>
+      (function () {
+        try {
+          var saved = localStorage.getItem('nexcoletas_theme');
+          if (saved === 'white') saved = 'light';
+          var theme = (saved === 'green' || saved === 'light' || saved === 'night') ? saved : 'green';
+          document.documentElement.setAttribute('data-theme', theme);
+          if (theme === 'night') {
+            document.documentElement.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+          }
+        } catch (e) {
+          document.documentElement.setAttribute('data-theme', 'green');
+        }
+      })();
+    </script>
+  </head>
+  <body class="antialiased selection:bg-[#5DAA70]/25 selection:text-[#174D35]">
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>

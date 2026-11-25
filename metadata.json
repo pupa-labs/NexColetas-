@@ -1,0 +1,10 @@
+{
+  "name": "NexColetas — Logística de Coletas Urbanas",
+  "description": "Plataforma SaaS multi-tenant de logística inteligente, coletas urbanas, entregas rápidas e operações regionais com base em Manhuaçu - MG.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

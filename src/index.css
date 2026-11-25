@@ -1,0 +1,165 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/* ==========================================================================
+   NEXCOLETAS — FOUNDATION BUILD (SPRINT 01)
+   Tokens Oficiais do Blueprint Master NexColetas:
+   - Forest Green: #174D35
+   - Eco Green:    #5DAA70
+   - Light Green:  #B8DCC0
+   - Off White:    #F5F7F4
+   - Graphite:     #111111
+   ========================================================================== */
+
+:root,
+[data-theme="green"] {
+  --nex-forest: #174D35;
+  --nex-eco: #5DAA70;
+  --nex-light-green: #B8DCC0;
+  --nex-off-white: #F5F7F4;
+  --nex-graphite: #111111;
+
+  --nex-bg: #F5F7F4;
+  --nex-surface: #FFFFFF;
+  --nex-surface-secondary: #EBF2EC;
+  --nex-header-bg: #FFFFFF;
+  --nex-sidebar-bg: #174D35;
+  --nex-sidebar-surface: #1E5E42;
+  --nex-sidebar-text: #F5F7F4;
+  --nex-sidebar-muted: #B8DCC0;
+  --nex-sidebar-border: #256B4C;
+
+  --nex-text: #111111;
+  --nex-text-primary: #111111;
+  --nex-muted: #4A5D50;
+  --nex-text-secondary: #4A5D50;
+  --nex-border: #D5E3D8;
+
+  --nex-primary: #174D35;
+  --nex-primary-hover: #123D2A;
+  --nex-primary-fg: #FFFFFF;
+  --nex-accent: #5DAA70;
+  --nex-highlight: #B8DCC0;
+
+  --nex-success: #174D35;
+  --nex-warning: #B45309;
+  --nex-danger: #B91C1C;
+  --nex-input-bg: #FFFFFF;
+}
+
+[data-theme="light"],
+[data-theme="white"] {
+  --nex-forest: #174D35;
+  --nex-eco: #5DAA70;
+  --nex-light-green: #B8DCC0;
+  --nex-off-white: #F5F7F4;
+  --nex-graphite: #111111;
+
+  --nex-bg: #FFFFFF;
+  --nex-surface: #F5F7F4;
+  --nex-surface-secondary: #EAEFEA;
+  --nex-header-bg: #FFFFFF;
+  --nex-sidebar-bg: #F5F7F4;
+  --nex-sidebar-surface: #E6EDE7;
+  --nex-sidebar-text: #111111;
+  --nex-sidebar-muted: #526356;
+  --nex-sidebar-border: #D8E2DA;
+
+  --nex-text: #111111;
+  --nex-text-primary: #111111;
+  --nex-muted: #526356;
+  --nex-text-secondary: #526356;
+  --nex-border: #DCE4DD;
+
+  --nex-primary: #174D35;
+  --nex-primary-hover: #123D2A;
+  --nex-primary-fg: #FFFFFF;
+  --nex-accent: #5DAA70;
+  --nex-highlight: #B8DCC0;
+
+  --nex-success: #174D35;
+  --nex-warning: #B45309;
+  --nex-danger: #B91C1C;
+  --nex-input-bg: #FFFFFF;
+}
+
+[data-theme="night"] {
+  --nex-forest: #174D35;
+  --nex-eco: #5DAA70;
+  --nex-light-green: #B8DCC0;
+  --nex-off-white: #F5F7F4;
+  --nex-graphite: #111111;
+
+  --nex-bg: #0D110F;
+  --nex-surface: #141B17;
+  --nex-surface-secondary: #1C2620;
+  --nex-header-bg: #141B17;
+  --nex-sidebar-bg: #0A0E0C;
+  --nex-sidebar-surface: #141D18;
+  --nex-sidebar-text: #F5F7F4;
+  --nex-sidebar-muted: #9AB5A1;
+  --nex-sidebar-border: #202E26;
+
+  --nex-text: #F5F7F4;
+  --nex-text-primary: #F5F7F4;
+  --nex-muted: #9AB5A1;
+  --nex-text-secondary: #9AB5A1;
+  --nex-border: #26352C;
+
+  --nex-primary: #5DAA70;
+  --nex-primary-hover: #4C945E;
+  --nex-primary-fg: #0D110F;
+  --nex-accent: #B8DCC0;
+  --nex-highlight: #B8DCC0;
+
+  --nex-success: #5DAA70;
+  --nex-warning: #F59E0B;
+  --nex-danger: #EF4444;
+  --nex-input-bg: #1C2620;
+}
+
+/* ==========================================================================
+   TIPOGRAFIA & BASE LAYOUT (ZERO HORIZONTAL OVERFLOW)
+   ========================================================================== */
+
+html,
+body {
+  background-color: var(--nex-bg);
+  color: var(--nex-text-primary);
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+  line-height: 1.5;
+  overflow-x: hidden;
+  transition: background-color 150ms cubic-bezier(0.16, 1, 0.3, 1),
+              color 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+h1,
+h2,
+h3,
+h4,
+.font-display {
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: -0.02em;
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--nex-bg);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--nex-border);
+  border-radius: 3px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--nex-text-secondary);
+}

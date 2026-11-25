@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="bgGrad" x1="0" y1="0" x2="512" y2="512" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0B2E1E"/>
+      <stop offset="100%" stop-color="#166534"/>
+    </linearGradient>
+    <linearGradient id="arrowGrad" x1="90" y1="380" x2="350" y2="110" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#166534"/>
+      <stop offset="45%" stop-color="#22C55E"/>
+      <stop offset="100%" stop-color="#84CC16"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="url(#bgGrad)"/>
+  <!-- Swoop orbit -->
+  <path d="M88 345C60 398 158 424 318 358C200 392 108 380 112 336Z" fill="#84CC16"/>
+  <!-- N ribbon & upward arrow -->
+  <path d="M116 346L172 182C184 150 218 150 232 182L284 294L336 164L304 148L382 106L392 194L360 178L298 334C284 366 250 364 236 332L184 218L154 346H116Z" fill="url(#arrowGrad)"/>
+  <!-- Isometric white parcel cube -->
+  <g transform="translate(310, 260)">
+    <polygon points="56,0 112,28 56,56 0,28" fill="#F1FDF4"/>
+    <polygon points="0,28 56,56 56,120 0,92" fill="#DCE8DF"/>
+    <polygon points="56,56 112,28 112,92 56,120" fill="#FFFFFF"/>
+    <path d="M28 14L84 42V68" stroke="#0B2E1E" stroke-width="6" stroke-linecap="round"/>
+  </g>
+</svg>
